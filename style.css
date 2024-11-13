@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: url(https://wallpapers.com/images/hd/anime-sunset-3803-x-1950-background-ni3dn8srht7m4nha.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+section{
+    margin-top: 3%;
+    height: 100vh;
+}
+.iconswrap img{
+width: 7%;
+margin-left: 15px;
+margin-top: 20px;
+
+
+}
+button img{
+    width: 20%;
+}
+#avatar {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+video{
+    width: 100%;
+}
+
+.textport{
+    display: flex;
+    flex-direction: column;
+}
+.textport p{
+    margin: 0px 50px;
+}
+.presen{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container{
+margin: 0px 350px;
+margin-top: 0%;
+padding: 25px;
+border-radius: 5px 5px 0px 0px;
+background-color: #1E2124;
+color: white;
+
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.0rem;
+}
+h2{
+    font-size: 1.3em;
+    
+}
+p{
+    font-size: 1.09em;
+}
+.text{
+    display: flex;
+}
+.text button{
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 8px; 
+    border-radius: 15px;
+    padding: 5px;
+    margin: 0px 15px;
+    background-color: #a00101;
+    color: #eaeaea;
+    font-weight: 500;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+#more{
+    margin: 20px;
+}
+hr{
+    margin: 10px 0px;
+    width: 40%;
+    padding: 5px;
+    border: none;
+    background-color: black;
+    transition: all 0.5s;
+}
+h2:hover ~ hr{
+    width: 60%;
+}
+.video{
+    margin: 0px 350px;
+
+}
+.video video{
+    object-fit: cover;
+    height: 260px;
+    border-radius: 0px 0px 5px 5px;
+}
+button:hover{
+    scale: 1.2;
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    transition: opacity 0.5s ease;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 1;
+}
+.fade-out {
+    opacity: 0;
+}
+
+
+@media (max-width: 830px) {
+    
+    .container{
+        margin: 0px 0px;
+        margin-top: 0%;
+        padding: 5px;
+        border-radius: 5px 5px 0px 0px;
+        background-color: #1E2124;
+        color: white;
+
+}
+.textport p{
+    margin: 0px 0px;
+}
+.video{
+    margin: 0px 0px;
+
+}
+.video video{
+    object-fit: cover;
+    height: 260px;
+    border-radius: 0px 0px 5px 5px;
+}
+body{
+    overflow: scroll;
+}
+section{
+    margin-top: 0%;
+    height: 70vh;
+}
+.text button{
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 8px; 
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px 20px;
+    background-color: #a00101;
+    color: #eaeaea;
+    font-weight: 500;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+}
+.iconswrap img{
+    width: 11%;
+    margin-left: 15px;
+    margin-top: 20px;
+    
+    
+    }
+}

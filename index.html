@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="principal">
+        <div class="container">
+            <h1 id="name">Codex Astil</h1>
+            <div class="presen">
+                <div class="textport">
+
+                    <h2 id="sbr">Sobre Mim</h2>
+                    <hr>
+                    <p>Iniciei minha trajetória na programação em 2023 com o curso técnico em Desenvolvimento de Sistemas, aprendendo PHP e banco de dados. Depois, comecei o Técnico em Informática e, agora, estou me especializando em Desenvolvimento Web pelo Instituto da Oportunidade Social.</p>
+                    <div class="iconswrap">
+                        <img src="icons/html.png" alt="">
+                        <img src="icons/css.png" alt="">
+                        <img src="icons/js.png" alt="">
+                        <img src="icons/php.png" alt="">
+                        <img src="icons/sql-server.png" alt="">
+                    </div>
+                </div>
+                <img src="images/baixados (1).gif" alt="" id="avatar">
+            </div>
+            <h2 id="more">Minhas redes!</h2>
+            <div class="text">
+
+                <button data-text="codexastil" onclick="copiarTexto(this)"><img src="icons/discord.png" alt="">codexastil</button>
+                <button data-text="Hutao#Codex" onclick="copiarTexto(this)"><img src="icons/game.png" alt="">Hutao#Codex</button>
+                <button data-text="@Codex_Astil1" onclick="copiarTexto(this)"><img src="icons/twitter.png" alt="">@Codex_Astil1</button>
+                <button data-text="https://open.spotify.com/user/c5ykias0iz9n9f378qcvluooi" onclick="copiarTexto(this)"><img src="icons/spotify.png" alt="">CodexFrags</button>
+            </div>
+        </div>
+        <div class="video">
+            <video src="images/XXXTENTACION - F_ck Love.mp4" autoplay loop id="video"></video>
+        </div>
+    </section>
+
+    <div id="overlay" onclick="entrar()">Clique para entrar</div>
+</body>
+<script>
+function entrar() {
+ 
+    const video = document.getElementById('video');
+    const overlay = document.getElementById('overlay');
+    
+    
+    overlay.classList.add('fade-out');
+    
+   
+    setTimeout(() => {
+        overlay.style.display = 'none';
+       
+        video.play();
+    }, 500); 
+}
+function copiarTexto(botao) {
+    
+    const texto = botao.getAttribute('data-text');
+    
+   
+    navigator.clipboard.writeText(texto).then(() => {
+       
+        const textoOriginal = botao.innerHTML;
+        
+       
+        botao.innerHTML = "Copiado!";
+        
+        
+        setTimeout(() => {
+            botao.innerHTML = textoOriginal;
+        }, 2000);
+    }).catch(err => {
+        console.error('Falha ao copiar o texto: ', err);
+    });
+}
+video.addEventListener('click', function() {
+            video.muted = !video.muted; 
+        });
+</script>
+</html>
